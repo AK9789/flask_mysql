@@ -1,0 +1,17 @@
+[1mdiff --git a/app.py b/app.py[m
+[1mindex aeea2ae..8e3bb41 100644[m
+[1m--- a/app.py[m
+[1m+++ b/app.py[m
+[36m@@ -68,10 +68,10 @@[m [mdef login_doctor():[m
+             session['loggedin'] = True[m
+             session['id'] = user['id'][m
+             session['email'] = user['email'][m
+[31m-            return jsonify('Logged in successfully!')[m
+[32m+[m[32m            return jsonify('Logged in')[m
+         else:[m
+             return jsonify('Incorrect username/password!')[m
+[31m-    return "logged in successfully!"[m
+[32m+[m[32m    return " User got logged in successfully!"[m
+ [m
+ @app.route("/logout")[m
+ def logout_doctor():[m
