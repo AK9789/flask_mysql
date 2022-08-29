@@ -71,7 +71,7 @@ def login_doctor():
             return jsonify('Logged in')
         else:
             return jsonify('Incorrect username/password!')
-    return "user logged in successfully!"
+    return " User got logged in successfully!"
 
 @app.route("/logout")
 def logout_doctor():
